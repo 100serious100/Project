@@ -1,10 +1,15 @@
+import App from "./Application/App";
+
 require('./bootstrap');
 
 import React from 'react';
-import ReactDOM from 'react-dom'
-import Home from './components/Home'
+import ReactDOM from 'react-dom';
+import Navbar from './Application/components/Navbar';
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-    <span>дороу<Home /></span>,
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>,
     document.querySelector('#root')
 );
